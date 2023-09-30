@@ -1,9 +1,6 @@
 # spotistats 
-# hi
 
-***
-
-# Setup 
+## Setup 
 <br>
 
 <br>
