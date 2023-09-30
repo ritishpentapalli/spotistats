@@ -1,9 +1,7 @@
 # spotistats 
 
 ## Setup 
-<br>
 
-<br>
 ###### Installing dependencies
 <br>
 spotistats primarily runs on Python. Make sure you have all dependencies installed before running it.
