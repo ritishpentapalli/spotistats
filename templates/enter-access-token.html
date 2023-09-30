@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Enter Access Token</title>
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css/homepage.css') }}">
+{% endblock %}
+
+
+{% block body %}
+
+<h1>Enter Access Token</h1>
+<form action="/access-token" method=post>
+  <input type="text" name="access-token">
+  <button>Submit</button>
+</form>
+<h2>Instructions</h2>
+{% endblock %}

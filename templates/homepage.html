@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title></title>
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css/homepage.css') }}">
+{% endblock %}
+
+
+{% block body %}
+<div>
+  <p>Spotify Recommender App</p>
+  <form action="/spotify-login" method=post>
+    <button type="submit" class="login-button">
+      Login to Spotify
+    </button>
+  </form>
+</div>
+{% endblock %}

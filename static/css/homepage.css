@@ -1,0 +1,31 @@
+div {
+  display:flex;
+  height:100vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+p {
+  margin: 40px;
+}
+.login-button {
+  background-color: white;
+  border: 0;
+  border-radius: 25vh;
+  height: 80px;
+  width: 220px;
+  font-weight: 700;
+  font-size: x-large;
+  color: black;
+  text-align: center;
+  justify-content: center;
+  transition: 0.15s;
+}
+
+.login-button:hover {
+  height: 90px;
+  width: 230px;
+  font-size: 25px;
+}
