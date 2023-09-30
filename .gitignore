@@ -1,2 +1,8 @@
+# Environment Variables
 .env
+
+# Access Token (read code)
 user_access_token.txt
+
+# Python venv
+venv/
