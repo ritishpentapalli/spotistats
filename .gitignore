@@ -1,7 +1,8 @@
-# Environment Variables
+# Environment Variables and program unrelated files
 .env
+.DS_store
 
-# Access Token (read code)
+# Access Token
 user_access_token.txt
 
 # Python venv
