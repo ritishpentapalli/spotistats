@@ -9,3 +9,6 @@ venv/
 
 # Python file to test feature implementation before adding to file
 testing.py
+
+# Jupyter Notebook file to have a better look at pandas dataframes
+Untitled-1.ipynb
