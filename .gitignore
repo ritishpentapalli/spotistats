@@ -8,8 +8,6 @@ user_access_token.txt
 # Python venv
 venv/
 
-# Python file to test feature implementation before adding to file
+# Python files to test features/look at dataframes -> not relevant to the program
 testing.py
-
-# Jupyter Notebook file to have a better look at pandas dataframes
 Untitled-1.ipynb

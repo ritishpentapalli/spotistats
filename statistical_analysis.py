@@ -11,7 +11,7 @@ top_songs = []
 top_songs_api_call = requests.get(f'https://api.spotify.com/v1/me/top/tracks?limit=50&time_range=medium_term', headers={"Authorization": f"Bearer {user_access_token}"}).json()['items']
 
 for song in top_songs_api_call:
-    top_songs.append([ # Nested list of top 50 songs [ <song name>:str, <song ID>:str, <popularity>:int]
+    top_songs.append([ # Nested list of top 50 songs [<song name>:str, <song ID>:str, <popularity>:int]
           song['name'],
           song['id'],
           song['popularity']
@@ -69,3 +69,7 @@ artists_pandas = pd.DataFrame(top_artists, columns=['Name',
 
 print(songs_pandas)
 print(artists_pandas)
+
+
+
+# Summarizing user's music data
