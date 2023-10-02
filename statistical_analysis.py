@@ -8,9 +8,9 @@ with open("user_access_token.txt") as file:
 ###### Getting user's top 50 tracks from Spotify API ######
 top_songs = []
 top_songs_api_call = requests.get(f'https://api.spotify.com/v1/me/top/tracks?limit=50&time_range=medium_term', headers={"Authorization": f"Bearer {user_access_token}"}).json()['items']
-for song in top_songs_api_call: top_songs.append([song['id'],song['popularity']]) # Nested list of top 50 songs [<song ID>:str, <popularity>:int] # Potential: Fetch song name as well?
+for song in top_songs_api_call: top_songs.append([song['name'], song['id'],song['popularity']]) # Nested list of top 50 songs [ <song name>:str, <song ID>:str, <popularity>:int]
 
-songs_pandas = pd.DataFrame(top_songs, columns=['ID', 'Popularity'])
+songs_pandas = pd.DataFrame(top_songs, columns=[ 'Name','ID', 'Popularity'])
 
 ###### Getting user's top 10 artists from Spotify API ######
 top_artists = []
@@ -19,6 +19,6 @@ for artist in top_artists_api_call: top_artists.append([artist['name'], artist['
 
 artists_pandas = pd.DataFrame(top_artists, columns=['Name', 'ID', 'Popularity'])
 
-
-
+print(songs_pandas)
+print(artists_pandas)
 

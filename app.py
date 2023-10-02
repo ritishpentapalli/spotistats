@@ -39,3 +39,9 @@ def access_token():
 
 if __name__ == "__main__":
     app.run(debug = True, port = PORT_NUMBER)
+
+########## Issues ##########
+
+# Need to add favicon
+
+###########################
